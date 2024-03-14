@@ -1,0 +1,176 @@
+*{
+    font-family: "Roboto";
+    color: #fff;
+}
+
+.main-container{
+    background-image: url('https://res.cloudinary.com/db0f83m76/image/upload/v1710422418/gettyimages-522279843-612x612_xg6svl.jpg');
+    margin-bottom: 0px;
+    background-size: cover;
+}
+
+.banner-container{
+    
+    padding: 16px 26px;
+}
+ul{
+    display: none;
+}
+
+.main-heading{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 19px;
+    line-height: 28px;
+}
+
+span{
+    color: orange;
+}
+
+button{
+    background-color: rgba(255, 0, 0, 0.685);
+    height: 30px;
+    color: #fff;
+    border: 0px;
+    padding: 0px 14px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+button:hover{
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.mobile-video-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 335px;
+}
+
+.banner-container div{
+    text-align: center;
+}
+
+.desktop-video-container{
+    display: none;
+}
+
+
+.mobile-video-container iframe{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    align-self: center;
+}
+
+.talk-btn{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    margin-top: 20px;
+}
+
+.whatsapp-icon{
+    background-color: rgba(0, 128, 0, 0.527);
+    margin-right: 6px;
+}
+.talk-container{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgba(124, 25, 25, 0.767);
+    margin-top: 0px;
+    padding: 10px 10px;
+}
+
+footer h1{
+    font-style: italic;
+}
+
+footer div h1{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+footer div p{
+    line-height: 27px;
+}
+
+footer div span{
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (min-width:768px){
+    .mobile-video-container{
+        display: none;
+    }
+
+    ul{
+        display: block;
+        padding: 20px;
+        list-style-type: circle;
+    }
+    ul li{
+        margin-top: 10px;
+    }
+
+    .banner-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 90px;
+        align-items: flex-start;
+    }
+
+    .banner-container div{
+        text-align: left;
+    }
+    button{
+        height: 40px;
+        padding: 0px 20px;
+        margin: 0px 0px;
+    }
+    .main-heading{
+        text-align: start;
+        font-size: 40px;
+    }
+    .desktop-video-container{
+        display: block;
+        height: 370px;
+        width: 530px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-start;
+        margin-top: 30px;
+        width: 50%;
+    }
+    .desktop-video-container iframe{
+        border-radius: 10px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        margin-bottom: 20px;
+    }
+   
+    .talk-container{
+        display: flex;
+    justify-content: flex-start;
+    }
+}
